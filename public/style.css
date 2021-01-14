@@ -1,0 +1,218 @@
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+#navbar {
+  background-color: white;
+  opacity: 0.9;
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  bottom: 15px !important;
+}
+
+#navbar .navbar a img {
+  width: 50px;
+}
+
+#navbar .navbar a p {
+  margin: 0;
+  padding: 10px 5px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#navbar .navbar a:hover {
+  text-decoration: none;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+#booking {
+  background-color: #ffde17;
+  box-shadow: 0 0 10px -4px black;
+}
+
+#booking .booking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.booking .dropdown p {
+  margin: 6px 0;
+}
+
+.booking .dropdown button {
+  background: none;
+  color: black;
+  border: none;
+}
+
+.form-group input {
+  border: none;
+}
+
+.Avail-btn button {
+  margin: 38px 0 0 0;
+  background-color: orange;
+  border: orange;
+}
+
+input[type="date" i]::-webkit-calendar-picker-indicator {
+  margin: 0;
+}
+
+#detail .detail-img img {
+  width: 40vw;
+}
+
+#detail .detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.detail .description {
+  width: 40vw;
+}
+
+#footer {
+  background-color: white;
+  height: 60px;
+  margin: 20px 0 0;
+}
+
+#footer .footer {
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+#footer .footer span {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+#detail .detail .utils {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 446px) {
+  #navbar .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 30px;
+  }
+
+  .sidebar {
+    display: block;
+    height: 100vh;
+    width: 170px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: orange;
+    left: -270px;
+    transition: all 1s;
+  }
+
+  .sidebar.active {
+    display: block;
+    height: 100vh;
+    width: 170px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: orange;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 30px 0 0 30px;
+  }
+
+  .sidebar ul li.sidebar-hello {
+    padding: 15px;
+    background-color: white;
+    font-weight: 600;
+  }
+
+  #detail .detail-img img {
+    width: 90vw;
+  }
+
+  #detail .description {
+    width: 90vw;
+  }
+
+  .Avail-btn button {
+    margin: 28px 0 0 0;
+  }
+
+  #booking .booking {
+    flex-wrap: nowrap;
+  }
+
+  #booking .booking .form-group {
+    width: 75px;
+  }
+
+  #booking .booking .dropdown p {
+    font-size: 13px;
+  }
+
+  #booking .booking .dropdown button {
+    font-size: 10px;
+    padding: 6px 0;
+  }
+
+  #booking .booking .form-group label {
+    font-size: 12px;
+  }
+
+  #booking .booking .form-group input {
+    font-size: 10px;
+    padding: 6px 0;
+  }
+
+  .close {
+    padding: 12px 0 0;
+  }
+}
